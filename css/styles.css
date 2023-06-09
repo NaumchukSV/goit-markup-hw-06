@@ -392,7 +392,9 @@ img {
     color: var(--third-text-color);
     max-width: 264px;
 }
-.footer-social-text{
+.footer-social-text, 
+.footer-subscription-text
+{
     font-weight: 500;
     font-size: var(--font-size-text);
     line-height: var(--line-height);
@@ -408,7 +410,62 @@ img {
     background-color: #31D0AA;
 }
 
-
+.footer-container-form{
+    margin-left: 80px;
+}
+.subscription-form {
+    display: flex;
+    align-items: center;
+}
+.subscription-form-input{
+    border: 1px solid var(--white-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    margin-right: 24px;
+    min-width: 264px;
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+}
+.subscription-form-input:focus {
+    outline: none;
+    border-color: var(--logo-color);
+}
+.subscription-form-input::placeholder{
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+}
+.subscription-form-submit{
+    display: flex;
+    align-items: center;
+    min-width: 165px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--btn-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    transition: background-color var(--transition-duration-and-func);
+    }
+    
+    .subscription-form-submit:hover,
+    .subscription-form-submit:focus {
+        background-color: var(--accent-color);
+    }
+.subscription-form-submit-icon{
+    fill: var(--white-color);
+}
+.subscription-form-submit-text{
+    margin-right: 16px;
+}
 /* modal */
 .backdrop {
     position: fixed;
@@ -465,11 +522,11 @@ img {
     transition:fill var(--transition-duration-and-func);
 }
 
-/* .is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 
 
 /* form */
@@ -591,7 +648,6 @@ img {
 .contact-form-checkbox:checked+.contact-form-own-checkbox>.contact-form-checkmark-icon {
     opacity: 1;
 }
-
 
 
 .contact-form-submit {
