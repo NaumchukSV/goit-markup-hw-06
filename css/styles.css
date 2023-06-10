@@ -633,11 +633,11 @@ img {
     margin-bottom: 24px;
 }
 
-/* .contact-form-checkbox-wrapper {
+.contact-form-checkbox-wrapper {
     display: flex;
     align-items: center;
     font-size: 13px;
-} */
+}
 
 .contact-form-checkbox {
     appearance: none;
