@@ -554,7 +554,6 @@ img {
 .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
     display: block;
-    margin-bottom: 8px;
 }
 
 
@@ -569,6 +568,8 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
     transition: border-color var(--transition-duration-and-func);
 }
 
@@ -587,9 +588,12 @@ img {
 }
 
 .contact-form-input:focus+.contact-form-input-icon {
-    fill: var(--accent-color);
+    fill: var(--logo-color);
 }
 
+.contact-form-comment-container{
+    margin-bottom: 16px;
+}
 
 .contact-form-message {
     width: 100%;
@@ -613,13 +617,15 @@ img {
     outline: none;
     border-color: var(--logo-color);
 }
-.contact-form-accept-terms{
+.contact-form-checkbox-wrapper{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--icon-color);
 }
-
+.contact-form-checkbox-container{
+    margin-bottom: 24px;
+}
 
 .contact-form-checkbox-wrapper {
     display: flex;

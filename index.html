@@ -644,15 +644,17 @@
           </div>
 
           <div class="contact-form-container">
-            <label class="contact-form-field-wrapper"> Phone</label>
+            <label class="contact-form-field-wrapper" for="user-tel">
+              Phone</label
+            >
             <div class="contact-form-input-wrapper">
               <input
                 class="contact-form-input"
                 type="tel"
-                name="user_tel"
+                name="user-tel"
+                id="user-tel"
                 required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx"
               />
               <svg
                 class="contact-form-input-icon"
@@ -666,12 +668,15 @@
           </div>
 
           <div class="contact-form-container">
-            <label class="contact-form-field-wrapper"> Email </label>
+            <label class="contact-form-field-wrapper" for="user-email">
+              Email
+            </label>
             <div class="contact-form-input-wrapper">
               <input
                 class="contact-form-input"
                 type="email"
-                name="user_email"
+                name="user-email"
+                id="user-email"
                 required
               />
               <svg
@@ -684,35 +689,42 @@
               </svg>
             </div>
           </div>
-
-          <label class="contact-form-field-wrapper">
-            <span class="contact-form-field-desc">Comment</span>
+          <div class="contact-form-comment-container">
+            <label class="contact-form-field-wrapper" for="user-comment">
+              Comment
+            </label>
             <textarea
               class="contact-form-message"
-              name="user_message"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
-          </label>
-          <label class="contact-form-checkbox-wrapper">
+          </div>
+          <div class="contact-form-checkbox-container">
             <input
               class="contact-form-checkbox"
               type="checkbox"
-              name="user_policy"
+              value="true"
+              name="user-privacy"
+              id="user-privacy"
               required
             />
-            <svg class="contact-form-own-checkbox" width="20" height="20">
-              <use
-                class="contact-form-checkmark-icon"
-                href="./images/icons.svg#icon-checkmark"
-              ></use>
-            </svg>
-            <span class="contact-form-accept-terms"
-              >I accept the terms and conditions of the
+            <label class="contact-form-checkbox-wrapper" for="user-privacy">
+              I accept the terms and conditions of the
               <a class="contact-form-link-privacy-policy" href=""
                 >Privacy Policy</a
-              ></span
-            >
-          </label>
+              >
+              <span>
+                <svg class="contact-form-own-checkbox" width="20" height="20">
+                  <use
+                    class="contact-form-checkmark-icon"
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
           <button type="submit" class="contact-form-submit">Send</button>
         </form>
       </div>
