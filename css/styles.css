@@ -444,6 +444,7 @@ img {
 .subscription-form-submit{
     display: flex;
     justify-content: center;
+    align-items: center;
     min-width: 165px;
     padding: 8px 24px;
     border: none;
@@ -538,6 +539,9 @@ img {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 16px;
+}
+.contact-form-container{
+    margin-bottom: 8px;
 }
 .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
