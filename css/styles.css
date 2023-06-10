@@ -658,22 +658,16 @@ img {
     
 }
 
-.contact-form-checkbox:focus+.contact-form-own-checkbox {
-    background-color: var(--accent-color);
-    fill: var(--third-text-color);
-}
 
 .contact-form-checkmark-icon {
     opacity: 0;
 }
 
-.contact-form-checkbox:checked+.contact-form-own-checkbox>.contact-form-checkmark-icon {
-    opacity: 1;
-}
-.contact-form-checkbox:checked+.contact-form-own-checkbox-wrapper {
+.contact-form-checkbox:checked+.contact-form-checkbox-wrapper>.contact-form-own-checkbox-wrapper {
     background-color: var(--accent-color);
     fill: var(--third-text-color);
     border: none;
+    opacity: 1;
 }
 
 
